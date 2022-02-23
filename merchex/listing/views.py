@@ -1,3 +1,6 @@
+from http.client import HTTPResponse
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def hello(request):
+    return HttpResponse("<h1>Bienvenu sur mon app Django</h1>")
