@@ -1,0 +1,9 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+                <h1>Bienvenu sur mon app Django</h1>
+                <p>Mes meilleurs groupes sont :</p>
+                        {%for listing in listings%}
+                           <p>{{listing.titre}}</p>
+                        {% endfor %}
+{% endblock %}
