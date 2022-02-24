@@ -19,5 +19,8 @@ from listing import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', views.hello)
+    path('hello/', views.hello),
+    path('about/', views.apropo),
+    path('contactus/', views.contactus),
+    path('listings/', views.listings),
 ]
